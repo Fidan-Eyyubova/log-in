@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Log In</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="left-text">
+          <h1>Sign In</h1>
+        </div>
+        <div class="left-form">
+          <form class="first-form" name="myform">
+            <label>USERNAME</label>
+            <input type="text" id="username" name="userform"/>
+          </form>
+          <form class="second-form" name="myform">
+            <label>PASSWORD</label>
+            <input type="password" id="password" name="passform"/>
+          </form>
+        </div>
+        <div class="left-button">
+          <button type="button" onclick="changeMe()" id="button">Sign In</button>
+        </div>
+        <div class="left-last">
+          <p class="check"><input type="checkbox" />Remember Me</p>
+          <p class="forget">Forgot Password?</p>
+        </div>
+      </div>
+      <div class="container-right">
+        <h1>Welcome to login</h1>
+        <p>Don't have an account?</p>
+        <button type="button">Sign Up</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

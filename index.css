@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container-left {
+  padding: 7px 50px;
+  border: 1px solid rgb(217, 217, 217);
+}
+.first-form,
+.second-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.left-last {
+  display: flex;
+  justify-content: space-between;
+}
+.left-form {
+  margin: 30px 0px;
+}
+.left-form input {
+  height: 40px;
+  background-color: rgb(232, 230, 230);
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+}
+.left-form label {
+  font: bold 14px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.left-button button {
+  background: rgb(16, 12, 142);
+  background: linear-gradient(
+    140deg,
+    rgba(16, 12, 142, 1) 32%,
+    rgba(50, 133, 224, 1) 74%,
+    rgba(25, 214, 249, 1) 100%
+  );
+  border-radius: 20px;
+  font-size: 17px;
+  border: 2px solid white;
+  border: none;
+  width: 260px;
+  padding: 10px 30px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+.left-last .check {
+  color: rgb(29, 83, 165);
+  font-weight: bold;
+}
+.container-right {
+  background: rgb(16, 12, 142);
+  background: linear-gradient(
+    140deg,
+    rgba(16, 12, 142, 1) 32%,
+    rgba(50, 133, 224, 1) 74%,
+    rgba(25, 214, 249, 1) 100%
+  );
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 100px 50px;
+  font-size: 20px;
+}
+.container-right button {
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-right {
+    padding: 77px 50px;
+    height: 232px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-right {
+    padding: 20px 50px;
+    width: 307px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-text {
+    font-size: 16px;
+  }
+  .left-form label {
+    font-size: 12px;
+  }
+  .left-button a {
+    font-size: 14px;
+  }
+}
